@@ -305,6 +305,18 @@ nav a:hover {
     font-size: 30px;
 }
 
+.spin-off-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spin-off-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
 
 /* =========================
    SPECIAL
