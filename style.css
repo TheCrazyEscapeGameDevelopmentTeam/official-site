@@ -528,3 +528,69 @@ footer {
     }
 
 }
+
+/* =========================
+WORLD
+==========================*/
+
+.spoiler-content {
+    display: none;
+
+    margin-top: 30px;
+    padding: 30px;
+
+    border: 1px solid #555;
+    background: #111;
+}
+
+.spoiler-content.show {
+    display: block;
+}
+
+.warning {
+    font-weight: bold;
+}
+
+.spoiler-box {
+    margin-top: 50px;
+    padding: 30px;
+
+    border: 1px solid #555;
+}
+
+.character-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 30px;
+}
+
+.character-card {
+    overflow: hidden;
+}
+
+.character-image {
+    height: 220px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-image img {
+    width: 90%;
+    height: 90%;
+
+    object-fit: contain;
+}
+
+.character-content {
+    padding: 20px;
+}
+
+.character-role {
+    font-size: 13px;
+    opacity: 0.7;
+}
