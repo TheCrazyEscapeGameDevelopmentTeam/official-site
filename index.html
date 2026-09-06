@@ -568,6 +568,24 @@
 
 </footer>
 
+<script>
+const musicButton = document.getElementById("music-button");
+const bgm = document.getElementById("bgm");
+
+musicButton.addEventListener("click", () => {
+
+    if (bgm.paused) {
+        bgm.play();
+        musicButton.classList.remove("muted");
+        musicButton.setAttribute("aria-label", "BGMを停止");
+    } else {
+        bgm.pause();
+        musicButton.classList.add("muted");
+        musicButton.setAttribute("aria-label", "BGMを再生");
+    }
+
+});
+</script>
 
 </body>
 </html>
