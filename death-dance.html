@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>死の踊り｜ぶっ飛んだ脱出ゲーム</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="world.html">世界観</a>
+        <a href="characters.html">登場人物</a>
+        <a href="death-dance.html">死の踊り</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="section">
+
+    <div class="section-title">
+
+        <p>DEATH DANCE</p>
+
+        <h1>死の踊り</h1>
+
+    </div>
+
+
+    <div class="death-intro">
+
+        <h2>死の踊りとは？</h2>
+
+        <p>
+            「ぶっ飛んだ脱出ゲーム」シリーズに登場する
+            謎の存在。
+        </p>
+
+        <p>
+            見た者は、同じ踊りを踊り続けてしまうという
+            奇妙な特徴を持つ。
+        </p>
+
+        <p class="warning">
+            その姿を見たら、逃げるしかない。
+        </p>
+
+    </div>
+
+
+    <div class="spoiler-box">
+
+        <h2>⚠ ネタバレ</h2>
+
+        <p>
+            この先にはシリーズの重要なネタバレが含まれています。
+        </p>
+
+        <button
+            id="spoiler-button"
+            class="button">
+            ネタバレを見る
+        </button>
+
+    </div>
+
+
+    <div
+        id="spoiler-content"
+        class="spoiler-content">
+
+        <h2>ここからネタバレ</h2>
+
+        <p>
+            ここにLEGENDなどで明かされる
+            死の踊りの過去や正体を書く。
+        </p>
+
+        <p>
+            ※現在は開発中のため、内容は変更される可能性があります。
+        </p>
+
+    </div>
+
+
+</section>
+
+</main>
+
+
+<script>
+
+const spoilerButton =
+    document.getElementById("spoiler-button");
+
+const spoilerContent =
+    document.getElementById("spoiler-content");
+
+
+spoilerButton.addEventListener("click", function() {
+
+    const result =
+        confirm("本当に見てしまいますか？");
+
+    if (result) {
+
+        spoilerContent.classList.add("show");
+
+        spoilerButton.textContent =
+            "ネタバレを隠す";
+
+    }
+
+});
+
+</script>
+
+</body>
+
+</html>
