@@ -111,15 +111,26 @@ const spoilerContent =
 
 spoilerButton.addEventListener("click", function() {
 
-    const result =
-        confirm("本当に見てしまいますか？");
+    if (!spoilerContent.classList.contains("show")) {
 
-    if (result) {
+        const result =
+            confirm("本当に見てしまいますか？");
+
+        if (!result) {
+            return;
+        }
 
         spoilerContent.classList.add("show");
 
         spoilerButton.textContent =
             "ネタバレを隠す";
+
+    } else {
+
+        spoilerContent.classList.remove("show");
+
+        spoilerButton.textContent =
+            "ネタバレを見る";
 
     }
 
