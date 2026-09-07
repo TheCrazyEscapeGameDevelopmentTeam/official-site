@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ギャラリー | ぶっ飛んだ脱出ゲーム</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="world.html">世界観</a>
+        <a href="timeline.html">時系列</a>
+        <a href="index.html#games">ゲーム</a>
+        <a href="index.html#news">お知らせ</a>
+        <a href="index.html#team">チーム</a>
+        <a href="index.html#links">リンク</a>
+
+        <button id="music-button" class="music-button">
+            ♪
+        </button>
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+
+        <p class="page-label">GALLERY</p>
+
+        <h1>ギャラリー</h1>
+
+        <p>
+            「ぶっ飛んだ脱出ゲーム」シリーズの
+            スクリーンショットや画像を掲載しています。
+        </p>
+
+    </section>
+
+
+    <section class="gallery-section">
+
+        <h2>GAME</h2>
+
+        <div class="gallery-grid">
+
+            <figure class="gallery-item">
+                <img src="images/game1.png" alt="ぶっ飛んだ脱出ゲーム">
+                <figcaption>
+                    ぶっ飛んだ脱出ゲーム
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/game2.png" alt="ぶっ飛んだ脱出ゲームⅡ">
+                <figcaption>
+                    ぶっ飛んだ脱出ゲームⅡ
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/game3.png" alt="ぶっ飛んだ脱出ゲームⅢ">
+                <figcaption>
+                    ぶっ飛んだ脱出ゲームⅢ
+                </figcaption>
+            </figure>
+
+        </div>
+
+    </section>
+
+
+    <section class="gallery-section">
+
+        <h2>CHARACTER</h2>
+
+        <div class="gallery-grid">
+
+            <figure class="gallery-item">
+                <img src="images/kat.png" alt="カット">
+                <figcaption>カット</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/gobo.png" alt="ゴボ">
+                <figcaption>ゴボ</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/giga.png" alt="ギガ">
+                <figcaption>ギガ</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/pico.png" alt="ピコ">
+                <figcaption>ピコ</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/terra.png" alt="テラ">
+                <figcaption>テラ</figcaption>
+            </figure>
+
+        </div>
+
+    </section>
+
+
+    <section class="gallery-section">
+
+        <h2>DEVELOPMENT</h2>
+
+        <div class="gallery-grid">
+
+            <figure class="gallery-item">
+                <img src="images/development1.png" alt="開発風景">
+                <figcaption>開発中の画像</figcaption>
+            </figure>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© ぶっ飛んだ脱出ゲーム開発チーム</p>
+</footer>
+
+
+<script>
+
+const musicButton = document.getElementById("music-button");
+const bgm = new Audio("audio/bgm.mp3");
+
+musicButton.addEventListener("click", () => {
+
+    if (bgm.paused) {
+
+        bgm.loop = true;
+        bgm.play();
+
+        musicButton.classList.remove("muted");
+
+    } else {
+
+        bgm.pause();
+
+        musicButton.classList.add("muted");
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
