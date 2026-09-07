@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>用語集 | ぶっ飛んだ脱出ゲーム</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="world.html">世界観</a>
+        <a href="timeline.html">時系列</a>
+        <a href="index.html#games">ゲーム</a>
+        <a href="index.html#news">お知らせ</a>
+        <a href="index.html#team">チーム</a>
+        <a href="index.html#links">リンク</a>
+
+        <button id="music-button" class="music-button">
+            ♪
+        </button>
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+
+        <p class="page-label">TERMS</p>
+
+        <h1>用語集</h1>
+
+        <p>
+            「ぶっ飛んだ脱出ゲーム」シリーズに登場する
+            用語を紹介します。
+        </p>
+
+    </section>
+
+
+    <section class="terms-section">
+
+        <div class="term-card">
+
+            <p class="term-category">
+                CHARACTER / ENTITY
+            </p>
+
+            <h2>死の踊り</h2>
+
+            <p class="term-en">
+                DEATH DANCE
+            </p>
+
+            <p>
+                「ぶっ飛んだ脱出ゲーム」シリーズに登場する
+                謎の存在。
+            </p>
+
+            <a href="death-dance.html" class="button small">
+                詳しく見る
+            </a>
+
+        </div>
+
+
+        <div class="term-card">
+
+            <p class="term-category">
+                GAME 02
+            </p>
+
+            <h2>ScTuber</h2>
+
+            <p class="term-en">
+                ScTuber
+            </p>
+
+            <p>
+                Ⅱに登場する言葉。
+                この世界でいう「YouTuber」。
+                ゴボが目指しているもの。
+            </p>
+
+        </div>
+
+
+        <div class="term-card">
+
+            <p class="term-category">
+                SYSTEM
+            </p>
+
+            <h2>連携コード</h2>
+
+            <p class="term-en">
+                CONNECTION CODE
+            </p>
+
+            <p>
+                ゲーム同士を連動させるためのコード。
+                ゲームタイトルにあるボタンを押すと連携コードが表示され、それをLEGENDで入力することでゲーム内のボーナスなどに使用できる。
+            </p>
+
+        </div>
+
+
+        <div class="term-card">
+
+            <p class="term-category">
+                SERIES
+            </p>
+
+            <h2>LEGEND</h2>
+
+            <p class="term-en">
+                LEGEND
+            </p>
+
+            <p>
+                本編より過去の出来事を描く
+                シリーズの前日譚。
+                死の踊りの生い立ちなどの謎が解き明かされる。
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© ぶっ飛んだ脱出ゲーム開発チーム</p>
+</footer>
+
+
+<script>
+
+const musicButton = document.getElementById("music-button");
+const bgm = new Audio("audio/bgm.mp3");
+
+musicButton.addEventListener("click", () => {
+
+    if (bgm.paused) {
+
+        bgm.loop = true;
+        bgm.play();
+
+        musicButton.classList.remove("muted");
+
+    } else {
+
+        bgm.pause();
+
+        musicButton.classList.add("muted");
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
