@@ -40,6 +40,8 @@ body {
 }
 
 .header-inner {
+    position: relative;
+   
     max-width: 1100px;
     margin: auto;
     padding: 16px 24px;
