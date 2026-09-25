@@ -10,7 +10,7 @@
 
     <meta 
         name="description"
-        content="ぶっ飛んだ脱出ゲーム公式サイト。「飛び脱」の愛称で呼ばれるパロディ×ホラー×脱出ゲームシリーズ。ゲーム本編、世界観、キャラクター、時系列、ギャラリーなどを紹介。">
+        content="ぶっ飛んだ脱出ゲーム公式サイトのポリシーについて。はじめにご覧ください。">
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.png">
@@ -59,6 +59,57 @@
     <audio id="bgm" loop>
         <source src="audio/bgm.mp3" type="audio/mpeg">
     </audio>
-  
+
+    <main>
+        <h1>ポリシー</h1>
+        <p>policy</p>
+        
+    </main>
+    
+  <footer>
+
+    <p>
+        © ぶっ飛んだ脱出ゲーム開発チーム
+    </p>
+
+    <p class="footer-note">
+        ※当サイトはScratchとは別の独立したゲーム開発者サイトです。Scratch公式サイトとは一切関係ありません。
+    </p>
+
+</footer>
+
+<script>
+const musicButton = document.getElementById("music-button");
+const bgm = document.getElementById("bgm");
+
+musicButton.addEventListener("click", () => {
+
+    if (bgm.paused) {
+        bgm.play();
+        musicButton.classList.remove("muted");
+        musicButton.setAttribute("aria-label", "BGMを停止");
+    } else {
+        bgm.pause();
+        musicButton.classList.add("muted");
+        musicButton.setAttribute("aria-label", "BGMを再生");
+    }
+
+});
+</script>
+
+<script>
+
+const menuButton = document.getElementById("menu-button");
+const navMenu = document.getElementById("nav-menu");
+
+menuButton.addEventListener("click", () => {
+
+    navMenu.classList.toggle("show");
+
+});
+
+</script>
+    
 </body>
+    
 </html>
